@@ -3,6 +3,17 @@ import turtle as t
 from color import color_list
 import random
 
+extracted_colors = colorgram.extract('image.jpg', 30)
+colors = []
+for color in extracted_colors:
+    r = color.rgb[0]
+    g = color.rgb[1]
+    b = color.rgb[2]
+    colors.append((r, g, b))
+
+# 20 ---50--- 20
+# 10X10 circles
+
 colors = color_list
 
 t.colormode(255)
